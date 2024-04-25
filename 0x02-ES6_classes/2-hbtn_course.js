@@ -6,10 +6,10 @@ export default class HolbertonSchool {
     this.name = name;
     this.length = length;
     this.students = students;
-  };
+  }
 
   set name(val) {
-    if (typeof(val) === 'string') {
+    if (typeof val === "string") {
       this._name = val;
     } else {
       throw error('Type of "name" must be a string!');
@@ -21,7 +21,7 @@ export default class HolbertonSchool {
   }
 
   set length(val) {
-    if (typeof(val) === 'number') {
+    if (typeof val === "number") {
       this._length = val;
     } else {
       throw error('Type of "length" must be a number!');
@@ -33,8 +33,8 @@ export default class HolbertonSchool {
   }
 
   set students(val) {
-    if (!Array.isArray(val) || val.every((elem) => typeof(elem) != 'string')) {
-      throw error('Type of students must be Array of strings!');
+    if (!Array.isArray(val) || val.every((elem) => typeof elem != "string")) {
+      throw error("Type of students must be Array of strings!");
     } else {
       this._students = val;
     }
