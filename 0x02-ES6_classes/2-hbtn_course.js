@@ -1,6 +1,4 @@
-import { error } from "console";
-import { string } from "yargs";
-
+/* eslint-disale no-underscore-dangle */
 export default class HolbertonSchool {
   constructor(name, length, students) {
     this.name = name;
