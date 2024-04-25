@@ -1,4 +1,4 @@
-/* eslint-disale no-underscore-dangle */
+/* eslint-disable no-underscore-dangle */
 export default class HolbertonSchool {
   constructor(name, length, students) {
     this.name = name;
