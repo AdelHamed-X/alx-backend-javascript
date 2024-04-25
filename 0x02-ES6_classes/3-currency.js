@@ -4,31 +4,31 @@ export default class Currency {
     this.name = name;
   }
 
-  get code () {
+  get code() {
     return this._code;
   }
 
-  set code (val) {
-    if (typeof(val) === 'string') {
+  set code(val) {
+    if (typeof val === "string") {
       this._code = val;
     } else {
-      throw error('Type of code must be a string!');
+      throw error("Type of code must be a string!");
     }
   }
 
-  get name () {
+  get name() {
     return this._name;
   }
 
-  set name (val) {
-    if (typeof(val) === 'string') {
+  set name(val) {
+    if (typeof val === "string") {
       this._name = val;
     } else {
-      throw error('Type of name must be a string!');
+      throw error("Type of name must be a string!");
     }
   }
 
-  displayFullCurrency () {
+  displayFullCurrency() {
     return `${this._name} (${this._code})}`;
   }
 }
