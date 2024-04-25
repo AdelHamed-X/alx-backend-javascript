@@ -1,26 +1,27 @@
+/* eslint-disable */
 export default class Currency {
   constructor(code, name) {
-    this.code = code;
-    this.name = name;
-  }
-
-  get code() {
-    return this._code;
-  }
-
-  set code(val) {
-    if (typeof val === "number") {
-      this._code = val;
-    }
+    this._code = code;
+    this._name = name;
   }
 
   get name() {
     return this._name;
   }
 
-  set name(val) {
-    if (typeof val === "string") {
-      this._name = val;
+  set name(value) {
+    if (typeof value === "string") {
+      this._name = value;
+    }
+  }
+
+  get code() {
+    return this._code;
+  }
+
+  set code(value) {
+    if (typeof value === "string") {
+      this._code = value;
     }
   }
 
