@@ -1,4 +1,4 @@
-/* eslint-disable no-underscore-dangle */
+/* eslint-disable */
 import Building from "./5-building";
 
 export default class SkyHighBuilding extends Building {
