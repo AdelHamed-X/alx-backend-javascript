@@ -30,7 +30,7 @@ export default class Pricing {
     return `${this._amount} ${this._currency.displayFullCurrency}`;
   }
 
-  converPrice(amount, converionRate) {
+  static convertPrice(amount, converionRate) {
     return amount * converionRate;
   }
 }
