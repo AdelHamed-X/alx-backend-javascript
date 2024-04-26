@@ -27,14 +27,10 @@ export default class Pricing {
   }
 
   displayFullPrice() {
-    return `${this._amount} ${this._currency.displayFullCurrency}`;
+    return `${this._amount} ${this._currency.displayFullCurrency()}`;
   }
 
   static convertPrice(amount, converionRate) {
     return amount * converionRate;
   }
 }
-
-const p = new Pricing(100, new Currency("EUR", "Euro"));
-console.log(p);
-console.log(p.displayFullPrice());
