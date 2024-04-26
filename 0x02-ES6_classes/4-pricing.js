@@ -26,7 +26,7 @@ export default class Pricing {
     }
   }
 
-  displayfullPrice() {
+  displayFullPrice() {
     return `${this._amount} ${this._currency.displayFullCurrency}`;
   }
 
@@ -34,3 +34,7 @@ export default class Pricing {
     return amount * converionRate;
   }
 }
+
+const p = new Pricing(100, new Currency("EUR", "Euro"));
+console.log(p);
+console.log(p.displayFullPrice());
